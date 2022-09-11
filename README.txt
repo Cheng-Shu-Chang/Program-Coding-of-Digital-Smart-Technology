@@ -1,0 +1,1 @@
+Hello, this is the homework and practice of course "Implementation and Program Coding of Digital Smart Technology (數位智慧科技實作與程式控制)."
