@@ -3,8 +3,9 @@ void setup() {
   pinMode(13,OUTPUT);
   Serial.begin(9600);
 }
+float spacing = 12.7/27;
 bool IRState,preIRState;
-int count=0,now,pre=0;
+int count=0,now,past=0;
 void loop() {
   // put your main code here, to run repeatedly:
   IRState = digitalRead(2);
@@ -17,7 +18,7 @@ void loop() {
     Serial.print(millis());
     Serial.print("(ms)\t");
     Serial.print("Velocity: ");
-    Serial.print(0.500/(now-pre)*1000);
+    Serial.print(spacing/(now-past)*1000);
     Serial.print("(cm/s)\t");
     Serial.print("State: ");
     Serial.print(IRState);
@@ -25,6 +26,6 @@ void loop() {
     Serial.print(count);
     Serial.print("\n");
   }
-  pre = now;
+  past = now;
   preIRState = IRState;
 }
