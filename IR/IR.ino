@@ -6,6 +6,7 @@ void setup() {
   //Serial.print("State\t");
   //Serial.print("Count\t");
   Serial.print("\n");
+  delay(1000);
 }
 float spacing = 12.7/27;
 bool IRState,preIRState;
