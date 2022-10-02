@@ -4,3 +4,6 @@ Hello, this is the homework and practice of course "Implementation and Program C
 |---|---|
 |1st|Singing a song with a buzzer|
 |2nd|Measuring speed with an IR sensor|
+|3rd|Create a smiple piano|
+| |Create a counter with a potentiometer|
+| |Modify frequency with a potentiometer|
